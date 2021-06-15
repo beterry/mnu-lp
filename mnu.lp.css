@@ -168,13 +168,13 @@ ul{
 .hero-grid h1{
     margin: 0;
     font-size: 3.75rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .hero-grid h2{
     margin: 32px 0;
-    font-size: 1.125rem;
-    font-weight: 500;
+    font-size: 1.75rem;
+    font-weight: 400;
     line-height: 1.5;
 }
 
@@ -199,7 +199,11 @@ ul{
 
 @media screen and (max-width: 768px){
     .hero-grid h1{
-        font-size: 2.25rem;
+        font-size: 2.125rem;
+    }
+
+    .hero-grid h2{
+        font-size: 1.25rem;
     }
 }
 
@@ -245,10 +249,15 @@ ul{
 }
 
 #how-it-works video{
+    display: block;
+}
+
+.video-mask{
     max-width: 768px;
     margin: 0 auto;
     border-radius: 16px;
-    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
 }
 
 /* =========================================== */
@@ -305,15 +314,20 @@ ul{
     box-sizing: border-box;
     border: 1px solid black;
     border-top: none;
+
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
 }
 
 .contact-input.first{
     border-top: 1px solid black;
     border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
 }
 
 .contact-input.last{
     border-radius: 0 0 10px 10px;   
+    -webkit-border-radius: 0 0 10px 10px;   
 }
 
 #form-message{
@@ -379,7 +393,7 @@ ul{
 /* BUTTONS */
 /* =========================================== */
 .demo-button{
-    height: 50px;
+    min-height: 50px;
     display: inline-flex;
     align-items: center;
     padding: 0 24px;
@@ -387,6 +401,7 @@ ul{
     text-decoration: none;
     border-radius: 25px;
     line-height: 1;
+    border: 1px solid var(--primary-red);
 }
 
 .demo-button.primary{
@@ -401,7 +416,6 @@ ul{
 .demo-button.secondary{
     color: var(--primary-red);
     background-color: transparent;
-    border: 1px solid var(--primary-red);
 }
 
 .demo-button.secondary:hover, .demo-button.secondary:focus, .demo-button.secondary:focus-visible  {
@@ -437,6 +451,11 @@ ul{
     width: 45%;
 }
 
+.bg-shape.small{
+    height: 200px;
+    width: 500px;
+}
+
 .bg-shape.top-right{
     top: 0;
     right: 0;
@@ -452,6 +471,13 @@ ul{
     left: 0;
 }
 
+.bg-shape.small.bottom-left{
+    bottom: 0;
+    right: 55%;
+    left: auto;
+    border-radius: 100px;
+}
+
 .bg-shape.top-right{
     border-radius: 200px 0 0 200px;
 }
@@ -462,8 +488,4 @@ ul{
 
 .bg-shape.bottom-left{
     border-radius: 0 200px 200px 0;
-}
-
-.bg-shape.bottom-left{
-    border-radius: 0 90px 90px 0;
 }
