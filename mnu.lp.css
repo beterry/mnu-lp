@@ -16,13 +16,14 @@
 
 html, body{
     min-height: 100%;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Comfortaa', cursive;
     scroll-behavior: smooth;
     box-sizing: border-box;
     overflow-x: hidden;
 }
 
 p{
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5;
 }
 
@@ -37,9 +38,9 @@ ul{
 /* GENERAL */
 /* =========================================== */
 .mnu-section{
-    padding: 5% 16px;
+    padding: 0 16px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 5% auto;
     position: relative;
     box-sizing: border-box;
 }
@@ -93,6 +94,8 @@ ul{
     background-color: var(--primary-yellow);
     border-radius: 48px;
     padding: 5%;
+    margin-right: 16px;
+    margin-left: 16px;
 }
 
 @media screen and (max-width: 768px){
@@ -102,8 +105,17 @@ ul{
 
     .background-block{
         border-radius: 16px;
-        padding: 32px;
+        padding: 32px 16px;
     }
+
+    .section-heading{
+        font-size: 2.125rem;
+    }
+}
+
+.background-block .mnu-section{
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 /* =========================================== */
@@ -114,9 +126,8 @@ ul{
     justify-content: space-between;
     align-items: center;
 
-    padding: 16px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 16px 0;
+    margin: 0 16px;
 
     box-sizing: border-box;
 }
@@ -148,21 +159,27 @@ ul{
     .mnu-nav li:not(:last-child){
         display: none;
     }
+
+    .mnu-nav li{
+        margin: 0;
+    }
 }
 
 /* =========================================== */
 /* HEADER */
 /* =========================================== */
 .mnu-hero{
-    padding-top: 0;
-    padding-bottom: 0;
+   
 }
 
 .hero-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 5fr 6fr;
     gap: 0px;
     align-items: center;
+
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .hero-grid h1{
@@ -305,6 +322,7 @@ ul{
     width: 100%;
     position: relative;
     box-sizing: border-box;
+    z-index: 2;
 }
 
 .contact-input{
@@ -357,7 +375,7 @@ ul{
     background-color: var(--primary-red);
     border: none;
     position: absolute;
-    top: 105%;
+    top: calc(100% + 24px);
     cursor: pointer;
 }
 
@@ -383,10 +401,20 @@ ul{
 /* FOOTER */
 /* =========================================== */
 .mnu-footer{
-    margin: 5% 0;
-    margin-top: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     box-sizing: border-box;
+    padding: 32px 0;
+}
+
+.mnu-footer .mnu-nav{
+    flex-direction: column;
+}
+
+.mnu-footer .mnu-nav ul{
+    margin-top: 16px;
 }
 
 /* =========================================== */
@@ -427,6 +455,11 @@ ul{
 /* =========================================== */
 .bg-wrapper{
     position: relative;
+    padding: 5% 0;
+}
+
+.bg-wrapper .mnu-section{
+    margin: 0 auto;
 }
 
 .bg-shape{
