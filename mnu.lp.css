@@ -146,6 +146,11 @@ ul{
     color: black;
 }
 
+.mnu-nav a:hover{
+    color: var(--primary-red);
+    border-bottom: 1px solid var(--primary-red);
+}
+
 .mnu-nav li:last-child{
     margin-right: 0;
 }
@@ -155,7 +160,7 @@ ul{
     height: auto;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 950px){
     .mnu-nav li:not(:last-child){
         display: none;
     }
@@ -225,6 +230,38 @@ ul{
 }
 
 /* =========================================== */
+/* BENEFITS */
+/* =========================================== */
+
+.benefit-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 36px;
+    margin-top: 36px;
+}
+
+.benefit-grid li{
+    background-color: var(--light-gray);
+    border-radius: 16px;
+    padding: 10%;
+    text-align: center;
+}
+
+.benefit-grid img{
+    width: 100px;
+}
+
+.benefit-grid p{
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px){
+    .benefit-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================== */
 /* FEATURES */
 /* =========================================== */
 .feature-grid{
@@ -269,12 +306,25 @@ ul{
     display: block;
 }
 
-.video-mask{
+.video-container{
     max-width: 768px;
     margin: 0 auto;
     border-radius: 16px;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
     overflow: hidden;
+}
+
+.video-ratio{
+    position: relative;
+    padding-top: 56.25%; 
+}
+
+.iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* =========================================== */
