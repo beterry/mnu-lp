@@ -38,11 +38,16 @@ ul{
 /* GENERAL */
 /* =========================================== */
 .mnu-section{
-    padding: 0 16px;
-    max-width: 1200px;
-    margin: 5% auto;
+    margin: max(5%, 32px) auto;
     position: relative;
     box-sizing: border-box;
+}
+
+.max-width{
+    max-width: 1200px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-heading{
@@ -90,32 +95,10 @@ ul{
     letter-spacing: .7px;
 }
 
-.background-block{
-    background-color: var(--primary-yellow);
-    border-radius: 48px;
-    padding: 5%;
-    margin-right: 16px;
-    margin-left: 16px;
-}
-
 @media screen and (max-width: 768px){
-    .mnu-section{
-        padding: 32px 16px;
-    }
-
-    .background-block{
-        border-radius: 16px;
-        padding: 32px 16px;
-    }
-
     .section-heading{
         font-size: 2.125rem;
     }
-}
-
-.background-block .mnu-section{
-    margin: 0 auto;
-    padding: 0 16px;
 }
 
 /* =========================================== */
@@ -125,9 +108,9 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 16px 0;
-    margin: 0 16px;
+    max-width: 1200px;
+    padding: 16px;
+    margin: 0 auto;
 
     box-sizing: border-box;
 }
@@ -173,8 +156,9 @@ ul{
 /* =========================================== */
 /* HEADER */
 /* =========================================== */
-.mnu-hero{
-   
+.mnu-header{
+    background-color: var(--primary-yellow);
+    border-radius: 0 0 48px 48px;
 }
 
 .hero-grid{
@@ -183,8 +167,8 @@ ul{
     gap: 0px;
     align-items: center;
 
-    margin-top: 0;
-    margin-bottom: 0;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .hero-grid h1{
@@ -201,12 +185,12 @@ ul{
 }
 
 .hero-image{
-    width: 135%;
+    width: 120%;
 }
 
 @media screen and (max-width: 1080px){
     .hero-grid{
-        grid-template-columns: 100%;
+        display: block;
     }
 
     .hero-image{
@@ -366,6 +350,9 @@ ul{
     grid-template-columns: 1fr 1fr;
     gap: 5%;
     align-items: center;
+    padding-top: 5%;
+    padding-bottom: calc(5% + 56px);
+    border-bottom: 1px solid black;
 }
 
 #contact-form{
@@ -436,6 +423,8 @@ ul{
 @media screen and (max-width: 768px){
     .contact-grid{
         display: block;
+        padding-top: 7.5%;
+        padding-bottom: 7.5%;
     }
 
     #submit-button, #form-message{
@@ -451,20 +440,9 @@ ul{
 /* FOOTER */
 /* =========================================== */
 .mnu-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    background-color: var(--primary-yellow);
+    border-radius: 48px 48px 0 0;
     box-sizing: border-box;
-    padding: 32px 0;
-}
-
-.mnu-footer .mnu-nav{
-    flex-direction: column;
-}
-
-.mnu-footer .mnu-nav ul{
-    margin-top: 16px;
 }
 
 /* =========================================== */

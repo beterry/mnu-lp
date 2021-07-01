@@ -16,19 +16,22 @@
     <link rel="shortcut icon" type="image/svg+xml" href="images/mnu-favicon.svg"/>
 </head>
 <body>
-    <nav id="top-nav" class="mnu-nav">
-        <img class="main-logo" src="images/mnu-logo.svg" alt="MNU logo" />
-        <ul>
-            <li><a href="#benefits">We Can Help...</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#our-story">Our Story</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="https://beterry.github.io/mnu-demo/" target="_blank" class="demo-button secondary">View Demo</a></li>
-        </ul>
-    </nav>
-    <header class="mnu-hero background-block">
-        <div class="hero-grid mnu-section">
+    
+    <header class="mnu-header">
+
+        <nav id="top-nav" class="mnu-nav">
+            <img class="main-logo" src="images/mnu-logo.svg" alt="MNU logo" />
+            <ul>
+                <li><a href="#benefits">We Can Help...</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#our-story">Our Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://beterry.github.io/mnu-demo/" target="_blank" class="demo-button secondary">View Demo</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-grid max-width">
             <div class="hero-content">
                 <h1>Is your online menu<wbr> customer-friendly?</h1>
                 <h2>We create beautiful, mobile-friendly menu websites.</h2>
@@ -36,8 +39,11 @@
             </div>
             <img class="hero-image" src="images/mnu-hero.png" alt="Computer and phone with menu onscreen" />
         </div>
+
     </header>
-    <section id='benefits' class="mnu-section">
+
+
+    <section id='benefits' class="mnu-section max-width">
         <h2 class="section-heading line center">We Can Help...</h2>
         <ul class="benefit-grid">
             <li>
@@ -57,7 +63,9 @@
             </li>
         </ul>
     </section>
-    <section id="features" class="mnu-section">
+
+
+    <section id="features" class="mnu-section max-width">
         <h2 class="section-heading line center">Menu Features</h2>
         <ul class="feature-grid">
             <li>
@@ -92,11 +100,13 @@
             </li>
         </ul>
     </section>
+
+
     <div class="bg-wrapper">
         <div class="bg-shape gray large top-right"></div>
         <div class="bg-shape yellow small bottom-left"></div>
 
-        <section id="how-it-works" class="mnu-section">
+        <section id="how-it-works" class="mnu-section max-width">
             <h2 class="section-heading line center">How It Works</h2>
             <div class="video-container">
                 <div class="video-ratio">
@@ -106,7 +116,8 @@
         </section>
     </div>
 
-    <section id="our-story" class="mnu-section">
+
+    <section id="our-story" class="mnu-section max-width">
         <img class="about-image" src="images/sophie-ben.jpg" alt="Ben Terry & Sophie Vakalis" />
         <div>
             <h2 class="section-heading line left">Our Story</h2>
@@ -115,27 +126,30 @@
         </div>
     </section>
 
-    <section id="contact" class="background-block">
-        <div class="contact-grid mnu-section">
-            <div>
-                <div class="heading-group overline">
-                    <h2 class="section-heading">Get in Touch!</h2>
-                    <h3 class="overline">Now in beta testing</h3>
-                </div>
-                <p>This is a new product and therefore we are actively seeking participation from restaurants. We will provide this product <strong>FREE OF CHARGE</strong> in exchange for your honest feedback.</p>
-                <p>If you are interested, please fill out the form with your information and we will be in touch to confirm the details.</p>
-            </div>
-            <form id="contact-form" action="https://usebasin.com/f/34201ad5eb50" method="POST">
-                <input class="contact-input first" type="text" placeholder="Name" id="contact-name" name="name" required>
-                <input class="contact-input" type="email" placeholder="Email" id="contact-email" name="email" required>
-                <input class="contact-input" type="tel" placeholder="Phone Number" id="contact-phone" name="telephone">
-                <input class="contact-input last" type="text" placeholder="Restaurant Website (if applicable)" id="contact-url" name="website">
-                <input id="submit-button" type="submit" value="Send" id="contact-submit">
-                <p id="form-message" class="hidden">Awesome! We'll be in touch soon!</p>
-            </form>
-        </div>
-    </section>
+
     <footer class="mnu-footer">
+
+        <section id="contact">
+            <div class="contact-grid max-width">
+                <div>
+                    <div class="heading-group overline">
+                        <h2 class="section-heading">Get in Touch!</h2>
+                        <h3 class="overline">Now in beta testing</h3>
+                    </div>
+                    <p>This is a new product and therefore we are actively seeking participation from restaurants. We will provide this product <strong>FREE OF CHARGE</strong> in exchange for your honest feedback.</p>
+                    <p>If you are interested, please fill out the form with your information and we will be in touch to confirm the details.</p>
+                </div>
+                <form id="contact-form" action="https://usebasin.com/f/34201ad5eb50" method="POST">
+                    <input class="contact-input first" type="text" placeholder="Name" id="contact-name" name="name" required>
+                    <input class="contact-input" type="email" placeholder="Email" id="contact-email" name="email" required>
+                    <input class="contact-input" type="tel" placeholder="Phone Number" id="contact-phone" name="telephone">
+                    <input class="contact-input last" type="text" placeholder="Restaurant Website (if applicable)" id="contact-url" name="website">
+                    <input id="submit-button" type="submit" value="Send" id="contact-submit">
+                    <p id="form-message" class="hidden">Awesome! We'll be in touch soon!</p>
+                </form>
+            </div>
+        </section>
+
         <nav class="mnu-nav">
             <img class="main-logo" src="images/mnu-logo.svg" alt="MNU logo" />
             <ul>
